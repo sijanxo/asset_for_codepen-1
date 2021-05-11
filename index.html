@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  *{
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(34, 35, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+    #wrapper{
+      margin: auto;
+      width: 90%;
+      display: grid;
+      place-items: center;
+      background-color: rgb(43, 44, 78);
+      color: white;
+      border-radius: 20px;
+      height: auto;
+    }
+    .image{
+      background: rgba(106, 54, 158 ,.2);
+      background-image: url("images/image-header-desktop.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      height: 15em;
+      position: relative;
+    }
+    .image>div{
+      background-color: rgba(189, 32, 163, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    ins{
+      text-decoration: none;
+      color: rgb(189, 32, 163);
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0 3em;
+      margin: 0;
+      text-align: center;
+      box-sizing: border-box;
+      opacity: 0.6;
+      font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .header{
+      text-align: center;
+      font-size: 27px;
+      padding: 1em;
+      padding-bottom: .7em;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    h5{
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      opacity: .5;
+      font-size: x-small;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+    #bigparent{
+      display: grid;
+      place-items: center;
+    }
+    .big-num{
+      font-size: 20px;
+      margin-bottom: 0;
+      padding: .4em;
+      font-family: sans-serif;
+      font-weight: 550;
+    }
+    .attribution{
+      padding: 2em;
+    }
+    mark{
+      background-color: rgb(147, 192, 41);
+      padding: 5px;
+      
+    }
+    a{
+      color: white;
+    }
+    
+    @media (min-width:600px){
+      #wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 50%;
+      }
+      .image{
+        width: 70%;
+        height: 100%;
+        border-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .image>div{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #bignumid{
+        display: flex;
+        
+      }
+      #bignumid>div{
+        padding: 1em;
+      }
+      .big-num{
+        padding-left: 0 ;
+      }
+      .attribution{
+        font-size: large;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+  <div class="image"><div></div></div>
+  <div id="bigparent"><h1 class="header">Get <ins>insights</ins> that help your business grow.</h1>
+
+  <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p>
+  <div id="bignumid"> 
+
+  <div><h1 class="big-num">10k+</h1> <h5>companies</h5></div>
+  <div><h1 class="big-num">314</h1> <h5>templates</h5></div>
+  <div><h1 class="big-num">12m+</h1> <h5>queries</h5></div>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <mark><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> </mark>.
+    Coded by <mark><a href="https://www.instagram.com/sijanxoxoxo">Sijan</a></mark>.
+  </div>
+  </div>
+</body>
+</html>
